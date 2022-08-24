@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <link rel="stylesheet" href="./css/core.css" />
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+    <script defer>
+      $(document).ready(function(){
+        $('.mobile').removeClass('mobile--hidden');
+
+        setTimeout(function(){
+          $('.content').removeClass('content--hidden');
+        },250);
+      })
+    </script>
+
+  </head>
+  <body>
+    <div class="background">
+      <div class="background__image background__image--left"></div>
+      <div class="background__image background__image--right"></div>
+
+      <div class="container">
+        <div class="mobile__container">
+          <div class="mobile mobile--hidden">
+            <div class="mobile__main">
+              <div class="mobile__header">
+                <div class="mobile__camera"></div>
+                <div class="mobile__user-info">
+                  <div class="mobile__chevron"></div>
+                  <div class="mobile__avatar"></div>
+                  <p class="mobile__name">Samuel Green</p>
+                  <p class="mobile__availability">Available to Walk</p>
+                  <div class="mobile__settings">
+                    <div class="mobile__settings-circle"></div>
+                    <div class="mobile__settings-circle"></div>
+                    <div class="mobile__settings-circle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile__messages">
+                <div class="mobile__message-group">
+                  <div class="mobile__message mobile__message--contact">
+                    That sounds great. I’d be happy with that.
+                  </div>
+                  <div class="mobile__message mobile__message--contact">
+                    Could you send over some pictures of your dog, please?
+                  </div>
+                </div>
+                <div class="mobile__message-group mobile__message-group--right">
+                  <ul class="mobile-img__group">
+                    <li class="mobile-img__avatar">
+                      <img
+                        src="./images/dog-image-1.jpg"
+                        class="mobile-img"
+                        alt="dog"
+                      />
+                    </li>
+                    <li class="mobile-img__avatar">
+                      <img
+                        src="./images/dog-image-2.jpg"
+                        class="mobile-img"
+                        alt="dog"
+                      />
+                    </li>
+                    <li class="mobile-img__avatar">
+                      <img
+                        src="./images/dog-image-3.jpg"
+                        class="mobile-img"
+                        alt="dog"
+                      />
+                    </li>
+                  </ul>
+                  <div class="mobile__message mobile__message--self">
+                    Here are a few pictures. She’s a happy girl!
+                  </div>
+                  <div class="mobile__message mobile__message--self">
+                    Can you make it?
+                  </div>
+                </div>
+                <div class="mobile__message-group">
+                  <div class="mobile__message mobile__message--contact">
+                    She looks so happy!  The time we discussed words.  How long shall I take her out for?
+                  </div>
+                  <div class="mobile__message mobile__message--contact-price">
+                    <span class="mobile__message--contact-price-circle"></span>
+                    <p>30 minute walk</p>
+                    <span class="mobile__message--contact-price-amount">$29</span>
+                  </div>
+                  <div class="mobile__message mobile__message--contact-price">
+                    <span class="mobile__message--contact-price-circle"></span>
+                    <p>1 hour walk</p>
+                    <span class="mobile__message--contact-price-amount"> $49</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-send">
+                <span
+                  type="text"
+                  class="mobile-send__input">Type a message...</span>
+                <button class="mobile-send__button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content content--hidden">
+          <h1 class="content__title">Simple booking</h1>
+          <p class="content__description">
+            Stay in touch with our dog walkers
+            through the chat interface. This makes it easy to discuss
+            arrangements and make bookings. Once the walk has been completed you
+            can rate your walker and book again all through the chat.
+          </p>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="attribution__link"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" class="attribution__link">David Burgess</a>.
+      </div>
+    </div>
+  </body>
+
+</html>

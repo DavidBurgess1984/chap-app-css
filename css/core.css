@@ -1,0 +1,257 @@
+body, html {
+  font-size: 16px;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.background {
+  position: relative;
+  padding: 30px; }
+
+.background__image {
+  position: absolute; }
+  .background__image--left {
+    background: #8739FF;
+    background: linear-gradient(60deg, #8739FF, #E844FF);
+    height: 100vh;
+    width: 510px;
+    top: -10vh;
+    left: -255px;
+    border-bottom-right-radius: 255px;
+    z-index: -1; }
+  .background__image--right {
+    background: #8739FF;
+    background: linear-gradient(-30deg, #8739FF, #E844FF);
+    height: 100vh;
+    width: 510px;
+    bottom: 0;
+    right: -255px;
+    border-top-left-radius: 255px;
+    z-index: -1;
+    opacity: 0.03; }
+
+.container {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto; }
+
+.mobile {
+  width: 247px;
+  height: 505px;
+  background-color: #FFF;
+  padding: 9.5px 11px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin: 0 auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #FFF;
+  margin-bottom: 64px;
+  position: relative;
+  transition: 1s; }
+  .mobile--hidden {
+    transform: translateX(-20px);
+    opacity: 0; }
+  .mobile__header {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: #8739FF;
+    height: 66px;
+    background: linear-gradient(30deg, #8739FF, #E844FF);
+    display: inline-block;
+    width: 100%; }
+  .mobile__camera {
+    background-color: #FFF;
+    width: 129px;
+    height: 29px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0; }
+  .mobile__user-info {
+    padding: 30px 16px 12px 16px;
+    display: grid;
+    grid-template-columns: 12px 36px auto auto; }
+  .mobile__name {
+    font-size: 11px;
+    grid-row: 1 / span 1;
+    align-self: center; }
+  .mobile__availability {
+    font-size: 11px;
+    color: #D99EFF;
+    font-size: 8px;
+    grid-row: 2 / span 1;
+    align-self: center; }
+  .mobile__chevron {
+    background: url("../images/chevron.png");
+    height: 10px;
+    width: 4px;
+    background-size: 4px 10px;
+    grid-row: 1 / span 2;
+    align-self: center; }
+  .mobile__avatar {
+    background: url("../images/avatar.jpg");
+    background-size: 24px 24px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    border: 1px solid #FFF;
+    background-position: center;
+    grid-row: 1 / span 2;
+    align-self: center; }
+  .mobile__settings {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1 / span 2;
+    align-items: flex-end;
+    justify-content: center; }
+  .mobile__settings-circle {
+    width: 2px;
+    height: 2px;
+    background-color: #FFF;
+    border-radius: 2px;
+    margin-bottom: 1px; }
+  .mobile__main {
+    background-color: #F5F3F7;
+    padding: 2px;
+    border-radius: 20px;
+    height: 100%;
+    box-sizing: border-box; }
+  .mobile__message-group {
+    margin: 8px;
+    display: flex;
+    flex-direction: column; }
+    .mobile__message-group--right {
+      align-items: flex-end; }
+  .mobile__message {
+    margin-bottom: 8px;
+    font-size: 8px;
+    line-height: 11px;
+    font-weight: 400;
+    max-width: 66%;
+    box-sizing: border-box;
+    padding: 6px 12px; }
+    .mobile__message--contact {
+      color: #9341C8;
+      background-color: #EEE5F4;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 4px; }
+      .mobile__message--contact-price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-height: 32px; }
+        .mobile__message--contact-price-circle {
+          height: 12px;
+          width: 12px;
+          border-radius: 12px;
+          border: 1px solid #E472FF;
+          margin-right: 8px; }
+        .mobile__message--contact-price-amount {
+          font-weight: 700;
+          font-size: 11px;
+          margin-left: auto; }
+    .mobile__message--self {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      background-color: #FFF;
+      color: #6E5D7E;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 10px; }
+    .mobile__message--contact-price {
+      color: #FFF;
+      background: linear-gradient(340deg, #8739FF, #E844FF);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 4px;
+      max-width: 75%; }
+
+.mobile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px; }
+  .mobile-img__group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px; }
+    .mobile-img__group--right {
+      text-align: right; }
+  .mobile-img__avatar {
+    width: 40px;
+    height: 40px;
+    margin-left: 8px; }
+
+.mobile-send {
+  background-color: #FFF;
+  margin: 8px;
+  box-sizing: border-box;
+  border-radius: 17px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .mobile-send__button {
+    border: none;
+    background-color: #3E2753;
+    width: 25px;
+    height: 25px;
+    border-radius: 13px;
+    background-image: url("../images/chevron-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 4px; }
+  .mobile-send__input {
+    color: #C5C9CC;
+    font-size: 9px;
+    margin-left: 20px; }
+
+.content {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: 1s; }
+  .content--hidden {
+    transform: translateX(-20px);
+    opacity: 0; }
+  .content__title {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    margin-bottom: 24px; }
+  .content__description {
+    color: #A39DA9;
+    font-size: 16px;
+    line-height: 28px; }
+
+.attribution {
+  color: #A39DA9;
+  font-size: 10px;
+  text-align: center; }
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 960px;
+    display: flex; }
+  .mobile__container {
+    flex: 1; }
+  .content {
+    flex: 1;
+    text-align: left;
+    margin-top: 150px; }
+  .background__image--left {
+    top: -30vh; }
+  .background__image--right {
+    top: 30vh; } }
