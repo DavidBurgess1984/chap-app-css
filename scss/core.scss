@@ -18,15 +18,17 @@ body,html {
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .background {
     position: relative;
     padding: 30px;
+    margin-top: 120px;
 }
 
 .background__image{
@@ -35,9 +37,9 @@ body {
     &--left{
         background:$color-deep-purple;
         background: linear-gradient(60deg, $color-deep-purple, $color-bright-purple);;
-        height:100vh;
-        width:510px;
-        top:-10vh;
+        height:75vh;
+        width:500px;
+        top:0;
         left:-255px;
         border-bottom-right-radius: 255px;
         z-index: -1;
@@ -47,8 +49,8 @@ body {
     &--right{
         background:$color-deep-purple;
         background: linear-gradient(-30deg, $color-deep-purple, $color-bright-purple);
-        height:100vh;
-        width:510px;
+        height:75vh;
+        width:500px;
         bottom:0;
         right:-255px;
         border-top-left-radius: 255px;
@@ -332,6 +334,15 @@ body {
 }
 
 @media screen and (min-width: 1440px){
+    body{
+        overflow: hidden;
+    }
+
+    .background {
+
+        margin-top: 0;
+    }
+
     .container {
         width: 960px;
         display: flex;
@@ -351,13 +362,13 @@ body {
     .background__image{
     
         &--left{
-            top:-30vh;
-            // top:-259px;
-            // left:-185px;
+            top:-20vh;
+            height: 80vh;
         }
     
         &--right{
-            top:30vh;  
+            bottom:-20vh;
+            height: 80vh;  
         }
     
     }
